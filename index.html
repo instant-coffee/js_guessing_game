@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Guessing Game</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+    <br>
+    <br>
+    <br>
+    <div class="container-fluid">
+      <div class="well col-lg-10 col-xs-12">
+<!--       <img src="./riddler_logo_by_deth711-d4h5zy9.jpg"> -->
+        <h2>NUMBER GUESSING GAME</h2>
+        <p>Your money: 
+        <span data-money="100">
+        </span>
+        </p>
+
+        <form id="betting-form">
+          <label>Your Bet (between 5 and 10) $:</label>
+          <br>
+          <br>
+          <input id="bet" class="form-control" type="number" placeholder="bet..." min="5" max="10" required>
+          <br>
+          <br>
+          <label>Your Guess (random number between 1 and 15):</label>
+          <br>
+          <br>
+          <input id="guess" class="form-control" type="number" placeholder="guess..." min="1" max="15" required>
+          <br>
+          <br>
+          <input id="start-game" class="btn btn-info btn-lg" type="submit">
+          <a class="reload-btn btn btn-lg btn-danger" href="">Reset!</a>
+        </form>
+        <br>
+        <small>Fueled by beer @ <a href="http://lighthouselabs.ca">Lighthouse Labs</a></small>
+        <small id="github">Find me on Gihthub: <a href="https://github.com/instant-coffee">instantcoffee</a></small>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="betting_game.js"></script>
+  </body>
+</html>
